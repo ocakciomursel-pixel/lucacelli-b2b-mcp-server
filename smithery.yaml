@@ -1,0 +1,16 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    required:
+      - apifyToken
+    properties:
+      apifyToken:
+        type: string
+        description: Your Apify API Token (includes $5.00/month free credit at console.apify.com/settings/integrations)
+  commandFunction: |-
+    (config) => ({
+      command: 'node',
+      args: ['./bin/mcp-server.mjs'],
+      env: { APIFY_TOKEN: config.apifyToken }
+    })

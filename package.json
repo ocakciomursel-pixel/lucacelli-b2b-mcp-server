@@ -1,0 +1,37 @@
+{
+  "name": "lucacelli-b2b-mcp-server",
+  "version": "1.2.0",
+  "description": "Zero-dependency Model Context Protocol (MCP) server exposing 16 B2B Lead Generation, Google Maps, Company Email Enrichment, Ad Pixel Spy, Shopify & Technical SEO tools for Claude Desktop, Cursor, Windsurf, and Cline.",
+  "type": "module",
+  "main": "./bin/mcp-server.mjs",
+  "bin": {
+    "lucacelli-b2b-mcp-server": "./bin/mcp-server.mjs"
+  },
+  "scripts": {
+    "start": "node ./bin/mcp-server.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "b2b-leads",
+    "google-maps-scraper",
+    "email-finder",
+    "clay",
+    "n8n",
+    "apify",
+    "seo-audit",
+    "llms-txt",
+    "shopify-scraper"
+  ],
+  "author": "Lucacelli Data Engineering (@lucacelli)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ocakciomursel-pixel/lucacelli-b2b-mcp-server.git"
+  },
+  "homepage": "https://ocakciomursel-pixel.github.io/lucacelli-b2b-mcp-server/"
+}
