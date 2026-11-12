@@ -1,14 +1,29 @@
 {
   "name": "lucacelli-b2b-mcp-server",
-  "version": "1.2.0",
-  "description": "Zero-dependency Model Context Protocol (MCP) server exposing 16 B2B Lead Generation, Google Maps, Company Email Enrichment, Ad Pixel Spy, Shopify & Technical SEO tools for Claude Desktop, Cursor, Windsurf, and Cline.",
+  "version": "2.0.0",
+  "description": "Zero-dependency Model Context Protocol (MCP) server, Streamable HTTP API, CLI & Claude Skill exposing 25 B2B Lead Generation, Google Maps, Company Email Enrichment, Ad Pixel Spy, Clay.com & SEO tools.",
   "type": "module",
   "main": "./bin/mcp-server.mjs",
   "bin": {
     "lucacelli-b2b-mcp-server": "./bin/mcp-server.mjs"
   },
+  "files": [
+    "bin/",
+    "workflows/",
+    "skills/",
+    "agents/",
+    "docs/openapi.json",
+    "SKILL.md",
+    "server.json",
+    "glama.json",
+    "smithery.yaml",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
-    "start": "node ./bin/mcp-server.mjs"
+    "start": "node ./bin/mcp-server.mjs",
+    "start:http": "node ./bin/mcp-server.mjs --http",
+    "test": "node --test test/mcp-server.test.mjs"
   },
   "engines": {
     "node": ">=18.0.0"
@@ -17,12 +32,17 @@
     "mcp",
     "mcp-server",
     "model-context-protocol",
+    "claude-skill",
+    "claude-code",
+    "cursor",
     "b2b-leads",
     "google-maps-scraper",
     "email-finder",
+    "email-verifier",
     "clay",
     "n8n",
     "apify",
+    "web-scraping",
     "seo-audit",
     "llms-txt",
     "shopify-scraper"
@@ -32,6 +52,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/ocakciomursel-pixel/lucacelli-b2b-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ocakciomursel-pixel/lucacelli-b2b-mcp-server/issues"
   },
   "homepage": "https://ocakciomursel-pixel.github.io/lucacelli-b2b-mcp-server/"
 }

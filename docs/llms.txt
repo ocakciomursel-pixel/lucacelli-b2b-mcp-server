@@ -1,0 +1,37 @@
+# Lucacelli B2B Intelligence, Clay.com, n8n & MCP Cloud Ecosystem (@lucacelli)
+> 25 zero-dependency MCP tools + 89+ Apify Cloud B2B scrapers at $0.50–$1.50 per 1,000 verified records ($5.00/mo free Apify compute credit included).
+
+## Quick Links
+- Interactive Token Injector & Clay ROI Hub: https://ocakciomursel-pixel.github.io/lucacelli-b2b-mcp-server/
+- OpenAPI 3.1.0 Custom GPT Action Schema: https://ocakciomursel-pixel.github.io/lucacelli-b2b-mcp-server/openapi.json
+- GitHub MCP, CLI & Claude Skill Repo: https://github.com/ocakciomursel-pixel/lucacelli-b2b-mcp-server
+- Clay.com & Chained n8n Workflows Repo: https://github.com/ocakciomursel-pixel/clay-n8n-b2b-enrichment-workflows
+- Apify Store Profile (89+ Live Scrapers): https://apify.com/lucacelli
+- Pro Agency Vault ($19 One-Time): https://buy.polar.sh/polar_cl_j0IOeyioFqMjcNZRqTo0Cqk6HGslU1yArpHUV47NP1j
+
+## 25 MCP / CLI / HTTP Tools
+- `scrape_google_maps_leads` (`$1.50/1k`): Extract local business leads from Google Maps including verified website emails (MX/SPF/DMARC), phone numbers, Instagram/LinkedIn/Facebook links, ad pixels, ratings, and reviews ($1.50/1k all-inclusive). -> https://apify.com/lucacelli/google-maps-scraper-places-emails-contacts-reviews
+- `enrich_b2b_company_domain` (`$0.80/1k`): Enrich company domains with verified emails, phone numbers, LinkedIn/X/Instagram handles, DNS MX/SPF/DMARC records, and 38+ SaaS tech stack signatures ($0.80/1k). -> https://apify.com/lucacelli/b2b-domain-contact-tech-enricher
+- `build_360_b2b_company_dossier` (`$0.80/1k`): Generate a complete 360-degree B2B company intelligence dossier combining executive contacts, DNS/security posture, ad spend pixels, and tech stack ($0.80/1k). -> https://apify.com/lucacelli/master-360-b2b-company-deep-dossier-enricher
+- `verify_bulk_emails_mx_syntax` (`$0.50/1k`): Verify email lists in bulk for RFC syntax, live DNS MX records, disposable providers, role accounts, and cold-email deliverability readiness ($0.50/1k). -> https://apify.com/lucacelli/bulk-email-verifier-mx-syntax
+- `generate_cold_email_icebreakers` (`$0.50/1k`): Crawl prospect websites and generate personalized B2B cold email first-line icebreakers, value-prop summaries, and Clay/Instantly/Smartlead outreach hooks ($0.50/1k). -> https://apify.com/lucacelli/cold-email-icebreaker-scraper
+- `detect_ad_spend_pixels` (`$0.80/1k`): Detect active paid ad spend signals on any website including Meta Pixel, Google Ads/GTM, TikTok Pixel, LinkedIn Insight Tag, and Microsoft Clarity ($0.80/1k). -> https://apify.com/lucacelli/pixel-tag-manager-ad-spend-signal-detector
+- `detect_b2b_sales_funnel_calendly_hubspot` (`$0.80/1k`): Detect Calendly, Chili Piper, HubSpot Meetings, Intercom, Drift, and high-intent B2B demo booking funnels across company websites ($0.80/1k). -> https://apify.com/lucacelli/calendly-hubspot-booking-funnel-sales-stack-detector
+- `spy_shopify_store_products_contacts` (`$0.50/1k`): Extract Shopify store product catalogs, live variant/SKU prices, stock availability, and merchant contact/social details ($0.50/1k). -> https://apify.com/lucacelli/shopify-store-product-contact-spy
+- `audit_technical_seo_broken_links` (`$0.80/1k`): Run a 45-point technical SEO, broken link, JSON-LD Schema.org, OpenGraph, and security header audit on any URL ($0.80/1k). -> https://apify.com/lucacelli/seo-technical-audit-broken-link-schema-analyzer
+- `convert_website_to_ai_markdown_llms_txt` (`$0.50/1k`): Convert webpages into clean LLM-ready Markdown, token-counted RAG chunks, and /llms.txt index entries ($0.50/1k). -> https://apify.com/lucacelli/ai-ready-website-to-markdown-rag-crawler
+- `scrape_ats_job_board_hiring_signals` (`$0.50/1k`): Extract active job openings, department hiring velocity, and B2B buying signals from Greenhouse, Lever, and Ashby career boards ($0.50/1k). -> https://apify.com/lucacelli/ats-job-board-hiring-signal-scraper
+- `find_restaurant_toast_opentable_leads` (`$0.50/1k`): Detect Toast POS, Square, OpenTable, Resy, DoorDash, UberEats, and contact emails across restaurant websites ($0.50/1k). -> https://apify.com/lucacelli/restaurant-toast-opentable-leads-scraper
+- `find_dental_medical_clinic_leads` (`$0.50/1k`): Extract dental, medspa, and clinic contact emails, phones, and patient booking software (Zocdoc, NexHealth, LocalMed) ($0.50/1k). -> https://apify.com/lucacelli/dental-clinic-leads-scraper
+- `find_salon_medspa_mindbody_leads` (`$0.80/1k`): Detect Mindbody, Vagaro, Boulevard, Fresha, Zenoti, and owner contact leads across salons, spas, and fitness studios ($0.80/1k). -> https://apify.com/lucacelli/salon-spa-fitness-studio-mindbody-vagaro-booking-spy
+- `spy_chrome_firefox_extensions` (`$0.50/1k`): Extract browser extension active users, ratings, versions, and publisher support emails by keyword or slug ($0.50/1k). -> https://apify.com/lucacelli/chrome-extension-store-scraper
+- `extract_saas_competitor_pricing_matrix` (`$0.80/1k`): Extract SaaS competitor pricing tiers, monthly/annual plan amounts, enterprise CTAs, and feature matrices ($0.80/1k). -> https://apify.com/lucacelli/saas-pricing-page-tier-feature-extractor
+- `find_accounting_cpa_firm_leads` (`$0.80/1k`): Extract partner emails, client portal software (CCH, Thomson Reuters, QuickBooks, Xero, Canopy), and phone numbers from CPA and accounting firm domains ($0.80/1k). -> https://apify.com/lucacelli/accounting-cpa-tax-advisory-firm-lead-enricher
+- `find_solar_hvac_contractor_leads` (`$0.80/1k`): Detect ServiceTitan, Housecall Pro, Jobber, financing widgets, license numbers, and owner contacts across home-service contractor websites ($0.80/1k). -> https://apify.com/lucacelli/solar-hvac-home-services-contractor-lead-enricher
+- `spy_hotel_direct_booking_ota_parity` (`$0.80/1k`): Detect Cloudbeds, SynXis, Mews, SiteMinder, Booking.com/Expedia widgets, and hospitality GM/sales contacts across hotel websites ($0.80/1k). -> https://apify.com/lucacelli/hotel-resort-direct-booking-engine-ota-parity-spy
+- `extract_b2b_case_studies_logos` (`$0.80/1k`): Extract named enterprise customers, case study URLs, client logo walls, and testimonial quotes from competitor B2B websites ($0.80/1k). -> https://apify.com/lucacelli/b2b-case-study-customer-logo-testimonial-extractor
+- `find_b2b_affiliate_partner_programs` (`$0.80/1k`): Discover PartnerStack, Impact, Rewardful, FirstPromoter, Tolt, commission percentages, and partnership contacts on SaaS domains ($0.80/1k). -> https://apify.com/lucacelli/b2b-partner-affiliate-program-commission-finder
+- `spy_zapier_make_n8n_integrations` (`$0.80/1k`): Detect public webhooks, REST API docs, Zapier apps, Make modules, n8n nodes, and developer relations contacts on SaaS domains ($0.80/1k). -> https://apify.com/lucacelli/zapier-make-n8n-automation-integration-spy
+- `analyze_landing_page_cro_funnel` (`$0.80/1k`): Audit landing page headlines, form field friction, CTA hierarchy, social proof density, and A/B testing scripts (VWO, Optimizely, PostHog) ($0.80/1k). -> https://apify.com/lucacelli/landing-page-cro-cta-form-funnel-analyzer
+- `scrape_substack_newsletter_authors` (`$0.50/1k`): Extract Substack newsletter metadata, author profiles, recent post cadence, subscriber signals, and sponsorship contact links ($0.50/1k). -> https://apify.com/lucacelli/substack-newsletter-scraper
+- `scrape_vscode_marketplace_extensions` (`$0.50/1k`): Extract VS Code extension install counts, ratings, GitHub repo links, and developer/company publisher details by keyword ($0.50/1k). -> https://apify.com/lucacelli/vscode-marketplace-scraper

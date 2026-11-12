@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.github.ocakciomursel-pixel/lucacelli-b2b-mcp-server",
+  "description": "25 B2B Lead Generation, Google Maps, Domain Contact Enrichment, Bulk Email Verification, Ad Pixel Spy & SEO tools powered by Apify Cloud ($5/mo free credit).",
+  "repository": {
+    "url": "https://github.com/ocakciomursel-pixel/lucacelli-b2b-mcp-server",
+    "source": "github"
+  },
+  "version": "2.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "github:ocakciomursel-pixel/lucacelli-b2b-mcp-server",
+      "version": "2.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "APIFY_TOKEN",
+          "description": "Your Apify API Token ($5.00/mo free credit included at https://console.apify.com/settings/integrations)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
