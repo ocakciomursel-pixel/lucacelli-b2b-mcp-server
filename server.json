@@ -1,17 +1,17 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
   "name": "io.github.ocakciomursel-pixel/lucacelli-b2b-mcp-server",
-  "description": "25 B2B Lead Generation, Google Maps, Domain Contact Enrichment, Bulk Email Verification, Ad Pixel Spy & SEO tools powered by Apify Cloud ($5/mo free credit).",
+  "description": "34 B2B Lead Generation, Apollo Alternative, Google Maps, Skool MRR, Clutch, G2/Capterra, Wellfound, SEC Funded Startups & Ad Spy tools on Apify Cloud ($5/mo free credit).",
   "repository": {
     "url": "https://github.com/ocakciomursel-pixel/lucacelli-b2b-mcp-server",
     "source": "github"
   },
-  "version": "2.0.0",
+  "version": "2.1.0",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "github:ocakciomursel-pixel/lucacelli-b2b-mcp-server",
-      "version": "2.0.0",
+      "version": "2.1.0",
       "transport": {
         "type": "stdio"
       },

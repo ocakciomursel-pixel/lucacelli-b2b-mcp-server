@@ -1,15 +1,16 @@
-# ⚡ Lucacelli B2B Lead Gen, Clay.com, n8n & MCP Server (`v2.0.0`)
+# ⚡ Lucacelli B2B Lead Gen, Clay.com, n8n & MCP Server (`v2.1.0`)
 
 [![ocakciomursel-pixel/lucacelli-b2b-mcp-server MCP server](https://glama.ai/mcp/servers/ocakciomursel-pixel/lucacelli-b2b-mcp-server/badges/score.svg)](https://glama.ai/mcp/servers/ocakciomursel-pixel/lucacelli-b2b-mcp-server)
 [![CI & MCP Protocol Verification](https://github.com/ocakciomursel-pixel/lucacelli-b2b-mcp-server/actions/workflows/ci.yml/badge.svg)](https://github.com/ocakciomursel-pixel/lucacelli-b2b-mcp-server/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-10b981.svg)](./LICENSE)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-3b82f6.svg)](./package.json)
 
-**Zero-dependency Model Context Protocol (MCP) Server + Streamable HTTP API + Direct CLI + Claude Code Skill + OpenAI Custom GPT Schema** exposing **25 verified B2B Lead Generation, Google Maps, Domain Contact Enrichment, Bulk Email Verification, Ad Pixel Spy & SEO tools** powered by [Apify Cloud (`@lucacelli`)](https://apify.com/lucacelli).
+**Zero-dependency Model Context Protocol (MCP) Server + Streamable HTTP API + Direct CLI + Claude Code Skill + OpenAI Custom GPT Schema** exposing **34 verified B2B Lead Generation, Apollo Alternative, Google Maps, Skool MRR, Clutch Agencies, G2/Capterra Reviews, Wellfound Startups, SEC Form D Funded Startups, Google Ads Spy & SEO tools** powered by [Apify Cloud (`@lucacelli`)](https://apify.com/lucacelli).
 
 > 🎁 **Run Free Every Month:** Every Apify account automatically includes **$5.00/month in free platform credit** — enough to enrich **3,300 to 10,000 verified B2B leads every month for $0.00** at our flat single-event pricing (`$0.50–$1.50 / 1,000` records, zero hidden add-on fees).
-> - 🌐 **[Interactive 1-Click Token Injector & Clay ROI Calculator](https://ocakciomursel-pixel.github.io/lucacelli-b2b-mcp-server/)**
-> - 💎 **[Get the Complete Pro Agency Vault (Clay + 7x Chained n8n + Sheets + Prompts) — $19 One-Time](https://buy.polar.sh/polar_cl_j0IOeyioFqMjcNZRqTo0Cqk6HGslU1yArpHUV47NP1j)**
+> - 🌐 **[Interactive Browser Cloud Playground, Token Injector & CSV Exporter](https://ocakciomursel-pixel.github.io/lucacelli-b2b-mcp-server/)**
+> - ⚡ **[Clay.com 25-Column HTTP API Waterfall Pack — $9 One-Time](https://buy.polar.sh/polar_cl_lDIkQ1BPDRI7qCNwAxGz8U0HlRs2higwma1EL1EYP5C)**
+> - 💎 **[Complete Pro Agency Vault (Clay + 7x Chained n8n + Python SDK + Cold Email Prompts) — $19 One-Time](https://buy.polar.sh/polar_cl_j0IOeyioFqMjcNZRqTo0Cqk6HGslU1yArpHUV47NP1j)**
 
 ---
 
@@ -44,11 +45,14 @@ npx skills add ocakciomursel-pixel/lucacelli-b2b-mcp-server
 ```bash
 export APIFY_TOKEN="apify_api_YOUR_TOKEN_HERE"
 
-# List all 25 B2B tools & input schemas
+# List all 34 B2B tools & input schemas
 npx -y github:ocakciomursel-pixel/lucacelli-b2b-mcp-server --list-tools
 
-# Enrich company domains with verified emails, phones & 38+ tech signatures
-npx -y github:ocakciomursel-pixel/lucacelli-b2b-mcp-server --call enrich_b2b_company_domain '{"domains":["stripe.com","linear.app"]}'
+# Cookie-free Apollo alternative: enrich company domains & executives
+npx -y github:ocakciomursel-pixel/lucacelli-b2b-mcp-server --call scrape_apollo_alternative_leads '{"domains":["linear.app","cal.com"]}'
+
+# Scrape Skool communities with estimated Monthly Recurring Revenue (MRR)
+npx -y github:ocakciomursel-pixel/lucacelli-b2b-mcp-server --call scrape_skool_communities_mrr '{"queries":["ai agency"],"maxCommunities":10}'
 
 # Scrape Google Maps local business leads + website emails
 npx -y github:ocakciomursel-pixel/lucacelli-b2b-mcp-server --call scrape_google_maps_leads '{"queries":["dental clinic"],"location":"Austin, TX","maxResultsPerQuery":20}'
@@ -61,7 +65,7 @@ npx -y github:ocakciomursel-pixel/lucacelli-b2b-mcp-server --http --port 8080
 ```
 
 ### OpenAI ChatGPT Custom GPT Actions (1-URL Import)
-Import all 25 scrapers into any **Custom GPT** via **Import from URL**:
+Import all 34 scrapers into any **Custom GPT** via **Import from URL**:
 ```text
 https://ocakciomursel-pixel.github.io/lucacelli-b2b-mcp-server/openapi.json
 ```
@@ -69,7 +73,7 @@ https://ocakciomursel-pixel.github.io/lucacelli-b2b-mcp-server/openapi.json
 
 ---
 
-## 🧰 3. Complete 25 B2B MCP Tools & All-Inclusive Flat Pricing
+## 🧰 3. Complete 34 B2B MCP Tools & All-Inclusive Flat Pricing
 
 | # | MCP Tool Name | Apify Cloud Actor | Flat Price | Description |
 |---|---|---|---|---|
@@ -98,29 +102,25 @@ https://ocakciomursel-pixel.github.io/lucacelli-b2b-mcp-server/openapi.json
 | 23 | `analyze_landing_page_cro_funnel` | [landing-page-cro-cta-form-funnel-analyzer](https://apify.com/lucacelli/landing-page-cro-cta-form-funnel-analyzer) | **$0.80 / 1k** | Audit landing page headlines, form field friction, CTA hierarchy, social proof density, and A/B testing scripts (VWO, Optimizely, PostHog) ($0.80/1k). |
 | 24 | `scrape_substack_newsletter_authors` | [substack-newsletter-scraper](https://apify.com/lucacelli/substack-newsletter-scraper) | **$0.50 / 1k** | Extract Substack newsletter metadata, author profiles, recent post cadence, subscriber signals, and sponsorship contact links ($0.50/1k). |
 | 25 | `scrape_vscode_marketplace_extensions` | [vscode-marketplace-scraper](https://apify.com/lucacelli/vscode-marketplace-scraper) | **$0.50 / 1k** | Extract VS Code extension install counts, ratings, GitHub repo links, and developer/company publisher details by keyword ($0.50/1k). |
+| 26 | `scrape_apollo_alternative_leads` | [apollo-b2b-leads-email-finder](https://apify.com/lucacelli/apollo-b2b-leads-email-finder) | **$0.80 / 1k** | Cookie-free Apollo.io alternative: discover B2B companies by niche/city or enrich domains with verified emails, MX/SPF/DMARC status, executive names, LinkedIn URLs, phones, and 35+ tech stack signals ($0.80/1k). |
+| 27 | `scrape_google_ads_transparency` | [google-ads-transparency-ad-spy-scraper](https://apify.com/lucacelli/google-ads-transparency-ad-spy-scraper) | **$0.75 / 1k** | Audit competitor domains or niches for Google Ads Transparency URLs, Google Ads Conversion IDs (AW-), GTM tags, Meta/LinkedIn/TikTok pixels, ads.txt sellers, and marketing contacts ($0.75/1k). |
+| 28 | `scrape_g2_capterra_software_reviews` | [g2-capterra-software-reviews-scraper](https://apify.com/lucacelli/g2-capterra-software-reviews-scraper) | **$0.80 / 1k** | Extract SaaS product star ratings, review counts, G2 & Capterra listing URLs, pricing pages, free-trial flags, and verified vendor contact emails ($0.80/1k). |
+| 29 | `scrape_wellfound_yc_startup_jobs` | [wellfound-startup-jobs-founders-scraper](https://apify.com/lucacelli/wellfound-startup-jobs-founders-scraper) | **$0.75 / 1k** | Extract actively hiring startups from Wellfound & Y Combinator directories with startup domains, team sizes, batch/stage, ATS career links, LinkedIn URLs, and verified contact emails ($0.75/1k). |
+| 30 | `scrape_skool_communities_mrr` | [skool-community-creator-leads-scraper](https://apify.com/lucacelli/skool-community-creator-leads-scraper) | **$0.80 / 1k** | Scrape Skool.com communities by keyword: extract member counts, monthly subscription price ($/mo), estimated Monthly Recurring Revenue (MRR), ratings, external links, and creator emails ($0.80/1k). |
+| 31 | `scrape_clutch_b2b_agency_leads` | [clutch-b2b-agency-leads-scraper](https://apify.com/lucacelli/clutch-b2b-agency-leads-scraper) | **$0.80 / 1k** | Extract B2B marketing, SEO, web design & software agencies from Clutch.co profiles with verified ratings, official domains, emails, phones, booking funnels, and LinkedIn URLs ($0.80/1k). |
+| 32 | `scrape_cargurus_auto_dealer_leads` | [cargurus-auto-dealer-leads-scraper](https://apify.com/lucacelli/cargurus-auto-dealer-leads-scraper) | **$0.75 / 1k** | Extract auto dealerships by city/state with official dealer websites, CarGurus profile links, verified dealership emails, phone numbers, addresses, and automotive CRM/DMS software stack ($0.75/1k). |
+| 33 | `scrape_funded_startups_sec_form_d` | [pitchbook-crunchbase-funded-startups-scraper](https://apify.com/lucacelli/pitchbook-crunchbase-funded-startups-scraper) | **$0.80 / 1k** | Find newly funded startups via real-time US SEC Form D filings + web enrichment: extract exact USD raised, founder/executive names, direct phone numbers, domains, and verified emails ($0.80/1k). |
+| 34 | `scrape_whatnot_live_seller_leads` | [whatnot-ebay-live-seller-leads-scraper](https://apify.com/lucacelli/whatnot-ebay-live-seller-leads-scraper) | **$0.75 / 1k** | Discover Whatnot live auction sellers and collectible/sneaker/vintage resellers with profile URLs, categories, external storefronts, social handles, and contact emails ($0.75/1k). |
 
 ---
 
 ## 🔗 4. Built-in Chained Agency Prompts (`prompts/list`) & Clay / n8n Workflows
 
 Includes **4 multi-actor MCP prompts** (`agency-ad-pixel-funnel-audit`, `local-business-outbound-campaign`, `hiring-signal-recruiter-outreach`, `saas-competitor-360-teardown`) plus ready-to-import JSON blueprints in [`./workflows/`](./workflows/) and [clay-n8n-b2b-enrichment-workflows](https://github.com/ocakciomursel-pixel/clay-n8n-b2b-enrichment-workflows):
-- [`clay-http-api-waterfall-pack.json`](./workflows/clay-http-api-waterfall-pack.json) — Save **85%–98%** vs native Clay enrichment credits
+- [`clay-25-column-master-waterfall.json`](./workflows/clay-25-column-master-waterfall.json) — Save **85%–98%** vs native Clay enrichment credits
 - [`n8n-agency-ad-pixel-funnel-outbound.json`](./workflows/n8n-agency-ad-pixel-funnel-outbound.json) — 4x Chained Ad Pixel + Funnel + Contacts + Icebreaker
 - [`n8n-local-vertical-hospitality-medspa-dental.json`](./workflows/n8n-local-vertical-hospitality-medspa-dental.json) — 4x Chained Google Maps + Vertical Spy + MX Verifier
 - [`n8n-hiring-signal-recruiting-outbound.json`](./workflows/n8n-hiring-signal-recruiting-outbound.json) — 4x Chained ATS Jobs + Contacts + Icebreaker
-
-## ⚙️ 5. GitHub Actions CI/CD Integration (`action.yml`)
-
-Run automated 45-point Technical SEO, Broken-Link, Schema.org, or `/llms.txt` audits on every deploy:
-
-```yaml
-- name: Run Lucacelli Technical SEO & Broken Link Audit
-  uses: ocakciomursel-pixel/lucacelli-b2b-mcp-server@main
-  with:
-    apify_token: ${{ secrets.APIFY_TOKEN }}
-    tool: audit_technical_seo_broken_links
-    args_json: '{"urls":["https://yourdomain.com"]}'
-```
 
 ## 🧪 Local Verification
 ```bash

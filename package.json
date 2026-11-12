@@ -1,7 +1,7 @@
 {
   "name": "lucacelli-b2b-mcp-server",
-  "version": "2.0.0",
-  "description": "Zero-dependency Model Context Protocol (MCP) server, Streamable HTTP API, CLI & Claude Skill exposing 25 B2B Lead Generation, Google Maps, Company Email Enrichment, Ad Pixel Spy, Clay.com & SEO tools.",
+  "version": "2.1.0",
+  "description": "Zero-dependency Model Context Protocol (MCP) server, Streamable HTTP API, CLI & Claude Skill exposing 34 B2B Lead Generation, Apollo Alternative, Google Maps, Skool MRR, Clutch, G2/Capterra, Google Ads Spy & Clay.com tools.",
   "type": "module",
   "main": "./bin/mcp-server.mjs",
   "bin": {
@@ -45,7 +45,14 @@
     "web-scraping",
     "seo-audit",
     "llms-txt",
-    "shopify-scraper"
+    "shopify-scraper",
+    "apollo-alternative",
+    "skool-scraper",
+    "clutch-scraper",
+    "g2-scraper",
+    "wellfound",
+    "google-ads-transparency",
+    "funded-startups"
   ],
   "author": "Lucacelli Data Engineering (@lucacelli)",
   "license": "MIT",

@@ -17,9 +17,9 @@ test('MCP initialize negotiates 2024-11-05 and 2025-03-26', async () => {
   assert.ok(res1.result.capabilities.resources);
 });
 
-test('tools/list returns 25 read-only annotated B2B tools', async () => {
+test('tools/list returns 34 read-only annotated B2B tools', async () => {
   const res = await handleJsonRpcRequest({ jsonrpc: '2.0', id: 2, method: 'tools/list' });
-  assert.equal(res.result.tools.length, 25);
+  assert.equal(res.result.tools.length, 34);
   for (const t of res.result.tools) {
     assert.ok(t.name);
     assert.ok(t.description.length > 20);
@@ -51,7 +51,7 @@ test('prompts/list and resources/list return playbooks and Clay resources', asyn
     params: { uri: 'lucacelli://catalog/25-b2b-tools' },
   });
   const parsed = JSON.parse(rRead.result.contents[0].text);
-  assert.equal(parsed.length, 25);
+  assert.equal(parsed.length, 34);
 });
 
 test('input mappers normalize Google Maps and SaaS pricing arguments accurately', () => {
@@ -69,7 +69,7 @@ test('input mappers normalize Google Maps and SaaS pricing arguments accurately'
 test('CLI --list-tools and Streamable HTTP /health + /mcp work end-to-end', async () => {
   const cliOut = execFileSync(process.execPath, ['./bin/mcp-server.mjs', '--list-tools'], { encoding: 'utf8' });
   const cliTools = JSON.parse(cliOut);
-  assert.equal(cliTools.length, 25);
+  assert.equal(cliTools.length, 34);
 
   const port = 18941;
   const proc = spawn(process.execPath, ['./bin/mcp-server.mjs', '--http', '--port', String(port)], {
@@ -81,7 +81,7 @@ test('CLI --list-tools and Streamable HTTP /health + /mcp work end-to-end', asyn
     const healthRes = await fetch(`http://127.0.0.1:${port}/health`);
     assert.equal(healthRes.status, 200);
     const healthJson = await healthRes.json();
-    assert.equal(healthJson.toolsCount, 25);
+    assert.equal(healthJson.toolsCount, 34);
 
     const mcpRes = await fetch(`http://127.0.0.1:${port}/mcp`, {
       method: 'POST',
@@ -90,7 +90,7 @@ test('CLI --list-tools and Streamable HTTP /health + /mcp work end-to-end', asyn
     });
     assert.equal(mcpRes.status, 200);
     const mcpJson = await mcpRes.json();
-    assert.equal(mcpJson.result.tools.length, 25);
+    assert.equal(mcpJson.result.tools.length, 34);
   } finally {
     proc.kill();
   }
