@@ -11,6 +11,8 @@
  */
 import readline from 'node:readline';
 import http from 'node:http';
+import fs from 'node:fs';
+import { pathToFileURL } from 'node:url';
 
 export const SERVER_INFO = {
   name: 'lucacelli-b2b-mcp-server',
@@ -976,9 +978,12 @@ async function runCli(argv) {
   return false;
 }
 
-const isDirectExecution =
-  process.argv[1] &&
-  (process.argv[1].endsWith('mcp-server.mjs') || process.argv[1].includes('lucacelli-b2b-mcp-server'));
+let isDirectExecution = false;
+try {
+  if (process.argv[1]) {
+    isDirectExecution = import.meta.url === pathToFileURL(fs.realpathSync(process.argv[1])).href;
+  }
+} catch {}
 
 if (isDirectExecution) {
   const handled = await runCli(process.argv.slice(2));
