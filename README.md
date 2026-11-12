@@ -7,11 +7,11 @@
 
 **Zero-dependency Model Context Protocol (MCP) Server + Streamable HTTP API + Direct CLI + Claude Code Skill + OpenAI Custom GPT Schema** exposing **34 verified B2B Lead Generation, Apollo Alternative, Google Maps, Skool MRR, Clutch Agencies, G2/Capterra Reviews, Wellfound Startups, SEC Form D Funded Startups, Google Ads Spy & SEO tools** powered by [Apify Cloud (`@lucacelli`)](https://apify.com/lucacelli).
 
-> 🎁 **Run Free Every Month or Order Custom Verified Datasets:** Every Apify account automatically includes **\$5.00/month in free platform credit** — test up to **1,400 verified B2B leads every month for \$0.00** at our flat all-inclusive pricing (`$3.50–$4.50 / 1,000` records, 90% cheaper than Apollo/Clay, zero proxy add-on fees).
+> 🎁 **Run Free Every Month or Unlock Ready-to-Use Vaults:** Every Apify account automatically includes **\$5.00/month in free platform credit** — test up to **1,400 verified B2B leads every month for \$0.00** at our flat all-inclusive pricing (`$3.50–$4.50 / 1,000` records, 90% cheaper than Apollo/Clay, zero proxy add-on fees).
+> - 💳 **[Instant Card / Apple Pay Checkout: Clay Pack (\$10) • Pro Agency Vault (\$20) • 1,125 Verified US Leads + Vault (\$30)](https://ocakciomursel-pixel.github.io/lucacelli-b2b-mcp-server/checkout.html)**
 > - 🌐 **[Interactive Browser Cloud Playground, Token Injector & CSV Exporter](https://ocakciomursel-pixel.github.io/lucacelli-b2b-mcp-server/)**
 > - 📥 **[Download Free 30-Row Live Sample CSV (SEC Funded Startups + Skool MRR + YC + US Agencies)](https://ocakciomursel-pixel.github.io/lucacelli-b2b-mcp-server/sample-leads-30-verified.csv)**
 > - 🚀 **[Run Apollo, SEC Form D & Skool MRR Scrapers Live on Apify Cloud (`@lucacelli`)](https://apify.com/lucacelli)**
-> - 📦 **[Order Custom 2,500+ Verified B2B Leads CSV Dataset (\$49 Done-For-You)](mailto:ocakciomursel@gmail.com?subject=Custom%202500%2B%20Verified%20B2B%20Leads%20CSV%20Order%20(%2449))**
 
 ---
 
