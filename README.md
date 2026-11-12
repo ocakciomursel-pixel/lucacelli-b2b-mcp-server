@@ -109,6 +109,19 @@ Includes **4 multi-actor MCP prompts** (`agency-ad-pixel-funnel-audit`, `local-b
 - [`n8n-local-vertical-hospitality-medspa-dental.json`](./workflows/n8n-local-vertical-hospitality-medspa-dental.json) — 4x Chained Google Maps + Vertical Spy + MX Verifier
 - [`n8n-hiring-signal-recruiting-outbound.json`](./workflows/n8n-hiring-signal-recruiting-outbound.json) — 4x Chained ATS Jobs + Contacts + Icebreaker
 
+## ⚙️ 5. GitHub Actions CI/CD Integration (`action.yml`)
+
+Run automated 45-point Technical SEO, Broken-Link, Schema.org, or `/llms.txt` audits on every deploy:
+
+```yaml
+- name: Run Lucacelli Technical SEO & Broken Link Audit
+  uses: ocakciomursel-pixel/lucacelli-b2b-mcp-server@main
+  with:
+    apify_token: ${{ secrets.APIFY_TOKEN }}
+    tool: audit_technical_seo_broken_links
+    args_json: '{"urls":["https://yourdomain.com"]}'
+```
+
 ## 🧪 Local Verification
 ```bash
 npm test

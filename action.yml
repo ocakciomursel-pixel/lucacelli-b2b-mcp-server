@@ -1,0 +1,37 @@
+name: 'Lucacelli B2B Lead Gen, Technical SEO & llms.txt Cloud Action'
+description: 'Run 45-point Technical SEO/Broken-Link audits, generate AI-ready /llms.txt Markdown, or enrich B2B domains & emails via Apify Cloud.'
+author: 'Lucacelli Data Engineering (@lucacelli)'
+branding:
+  icon: 'zap'
+  color: 'blue'
+
+inputs:
+  apify_token:
+    description: 'Apify API Token ($5.00/mo free credit included at https://console.apify.com/settings/integrations)'
+    required: true
+  tool:
+    description: 'Tool name from the 25-tool suite (e.g. audit_technical_seo_broken_links, convert_website_to_ai_markdown_llms_txt, enrich_b2b_company_domain)'
+    required: true
+    default: 'audit_technical_seo_broken_links'
+  args_json:
+    description: 'JSON input object passed to the selected tool'
+    required: true
+    default: '{"urls":["https://example.com"]}'
+  output_file:
+    description: 'Optional file path to save the JSON output array'
+    required: false
+    default: 'lucacelli-result.json'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Execute Lucacelli Cloud Tool
+      shell: bash
+      env:
+        APIFY_TOKEN: ${{ inputs.apify_token }}
+        TOOL_NAME: ${{ inputs.tool }}
+        ARGS_JSON: ${{ inputs.args_json }}
+        OUTPUT_FILE: ${{ inputs.output_file }}
+      run: |
+        node "${{ github.action_path }}/bin/mcp-server.mjs" --call "$TOOL_NAME" "$ARGS_JSON" > "$OUTPUT_FILE"
+        echo "Saved output to $OUTPUT_FILE"
